@@ -5,6 +5,7 @@ new Env('东方棘市');
 7.1号19:38更新自动提现(PS余额不满足1则不进行提现)
 7.1号22:40更新用户判断和余额错误来自@pijiu10456_S修改
 '''
+import os, requests
 def sign(token, remark):
     url = "https://ys.shajixueyuan.com/api/user_sign/sign"
     headers = {
